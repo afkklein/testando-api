@@ -53,8 +53,7 @@ public class ClienteControllerTest {
     @Test
     public void getClientesDeveRetornarTodosOsClientes() throws Exception {
         //cenario
-        when(clienteRepository
-                .findAll())
+        when(clienteRepository.findAll())
                 .thenReturn(Arrays.asList(joao, aarao));
 
         List<String> array = Arrays.asList(joaoJsonParse, aaraoJsonParse);
